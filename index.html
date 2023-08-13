@@ -1,9 +1,20 @@
+<!DOCTYPE html>
 <html>
 <body>
- 
-<?php
-echo "Study " . $_GET['subject'] . " at " . $_GET['web'];
-?>
+
+<h2>Redirecting to the app...</h2>
+
+
+<script>
+const url = document.URL;
+const params = url.slice(url.indexOf('?') + 1);
+
+function redirect() {
+  location.replace("https://www.w3schools.com?"+params)
+}
+setTimeout(redirect,3000);
+
+</script>
 
 </body>
-</html>
+</html> 
