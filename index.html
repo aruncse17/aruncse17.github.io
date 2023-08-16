@@ -10,7 +10,8 @@ const url = document.URL;
 const params = url.slice(url.indexOf('?') + 1);
 
 function redirect() {
-  location.replace("fintiger://ftserver.tigons.in?"+params)
+  // location.replace("fintiger://ftserver.tigons.in?"+params)
+  window.location.href = "fintiger://ftserver.tigons.in?"+params;
 }
 setTimeout(redirect,3000);
 
