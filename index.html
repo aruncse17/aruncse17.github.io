@@ -10,7 +10,7 @@ const url = document.URL;
 const params = url.slice(url.indexOf('?') + 1);
 
 function redirect() {
-  location.replace("fintiger://ftserver.tigons.in?"+params)
+  location.replace("fintiger://ftserver.tigons.in/payment?"+params)
   // location.replace("intent://ftserver.tigons.in?"+params+"#Intent;scheme=fintiger;action=android.intent.action.VIEW;end;")
 }
 setTimeout(redirect,3000);
