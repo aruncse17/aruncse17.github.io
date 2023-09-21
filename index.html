@@ -3,6 +3,7 @@
 <body>
 
 <h2>Redirecting to the app...</h2>
+<a href="#">click here</a>
 
 
 <script>
@@ -10,10 +11,10 @@ const url = document.URL;
 const params = url.slice(url.indexOf('?') + 1);
 
 function redirect() {
-  location.replace("https://assetlinks.tigons.in/?"+params)
+     location.replace("https://assetlinks.tigons.in/?"+params)
   // location.replace("intent://ftserver.tigons.in?"+params+"#Intent;scheme=fintiger;action=android.intent.action.VIEW;end;")
 }
-setTimeout(redirect,100);
+setTimeout(redirect,1000);
 
 </script>
 
